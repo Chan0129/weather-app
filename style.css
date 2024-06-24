@@ -1,0 +1,149 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 450px;
+  background: linear-gradient(
+      180deg,
+      rgba(186, 205, 247, 0.5),
+      rgba(19, 19, 156, 0.5),
+      rgba(2, 2, 31, 0.5)
+    ),
+    url("./images/background.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 30px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  padding: 10px 22px;
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color: lightcyan;
+  color: black;
+  transition: 300ms ease-in-out;
+}
+.search input:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust shadow color and size as needed */
+}
+
+.search button {
+  border: 1px solid white;
+  outline: 0;
+  background-color: transparent;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.search button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust shadow color and size as needed */
+}
+.search buttom img {
+  width: 16px;
+}
+.weather.icon {
+  margin-top: 20px;
+  width: 170px;
+}
+
+.weather h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 12px;
+  margin-right: 10px;
+}
+.humidity,
+.wind {
+  font-size: 20px;
+}
+
+.error {
+  text-align: left;
+  color: red;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: none;
+}
+.weather .icon {
+  margin-top: 50px;
+  width: 150px;
+  height: auto;
+}
+.weather img {
+  width: 60px;
+  height: 60px;
+}
+img {
+  width: 35px;
+  height: 35px;
+  background: none;
+  transition: 300ms ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
